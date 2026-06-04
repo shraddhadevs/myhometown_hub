@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Hometown Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="auth-wrapper">
+    <div class="auth-card">
+        <div style="text-align: center; margin-bottom: 25px;">
+            <h2 style="font-size: 26px; color: #1a2a6c; margin-bottom: 10px;">🏛️ Hometown Hub</h2>
+            <p style="font-size: 13px; color: #64748b; line-height: 1.4;">
+                ✨ Create your account and join our village community
+            </p>
+        </div>
+        
+        <form action="php/register.php" method="POST">
+            <label style="font-size: 13px; font-weight: 600; color: #475569;">Full Name</label>
+            <input type="text" name="fullname" placeholder="Enter your full name" required>
+            
+            <label style="font-size: 13px; font-weight: 600; color: #475569;">Email Address</label>
+            <input type="email" name="email" placeholder="example@gmail.com" required>
+            
+            <label style="font-size: 13px; font-weight: 600; color: #475569;">Password</label>
+            <input type="password" name="password" placeholder="Create strong password" required>
+            
+            <label style="font-size: 13px; font-weight: 600; color: #475569;">Village Name</label>
+            <input type="text" name="village" placeholder="Your hometown village name" required>
+            
+            <label style="font-size: 13px; font-weight: 600; color: #475569;">Village Pincode</label>
+            <input type="text" name="pincode" placeholder="6-digit pincode" required>
+            
+            <button type="submit">Register</button>
+        </form>
+        
+        <div class="switch-form" style="text-align: center; margin-top: 15px; font-size: 14px; color: #64748b;">
+            Already have an account? <a href="index.html" style="color: #1a2a6c; font-weight: 600; text-decoration: none;">Login</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

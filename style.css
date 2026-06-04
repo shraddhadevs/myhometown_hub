@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F8FAFC;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 1. Navigation Bar */
+.navbar {
+    background-color: #1a2a6c;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(26, 42, 108, 0.2);
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* 2. Container (main box layout) */
+.container {
+    width: 95%;
+    max-width: 600px; /* the edge width has been fixed */
+    margin: 20px auto; /* for center */
+    padding: 10px;
+}
+
+/* 3. Card (each section in one box) */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    border-top: 5px solid #1a2a6c;
+}
+
+/* 4. Auth Pages (Login/Register) */
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+}
+
+.auth-card {
+    background: white;
+    width: 100%;
+    max-width: 380px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-top: 6px solid #1a2a6c;
+}
+
+/* 5. Inputs & Buttons */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 13px;
+    background: #fcfcfc;
+}
+
+button, input[type="submit"] {
+    width: 100%;
+    background-color: #d4af37;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.switch-form a {
+    color: #1a2a6c;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* for post actions */
+.post-actions {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: 15px !important;
+    padding-top: 10px !important;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* for button fixing*/
+.action-btn {
+    background: none !important;
+    border: none !important;
+    color: #475569 !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    font-size: 13px !important;
+    padding: 5px 10px !important;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hometown Hub</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="auth-wrapper">
+    <div class="auth-card">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h2 style="font-size: 24px; color: #1a2a6c; margin-bottom: 8px;">🏛️ Hometown Hub</h2>
+            <p style="font-size: 13px; color: #64748b; line-height: 1.4;">
+                ✨ A Digital Platform for Village Community
+            </p>
+        </div>
+        
+        <form action="php/login.php" method="POST">
+            <label style="font-size: 13px; font-weight: 600; color: #475569;">Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            
+            <label style="font-size: 13px; font-weight: 600; color: #475569;">Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        
+        <div class="switch-form" style="text-align: center; margin-top: 15px; font-size: 14px; color: #64748b;">
+            New User? <a href="register.html" style="color: #1a2a6c; font-weight: 600; text-decoration: none;">Register Here</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
